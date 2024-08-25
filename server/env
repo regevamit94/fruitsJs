@@ -1,0 +1,2 @@
+PORT = 3000
+MONGODB_CONNECTION=mongodb://fruitsjs-svc:27017

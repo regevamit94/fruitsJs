@@ -7,6 +7,9 @@ spec:
   - port: 80
     protocol: TCP
     targetPort: 80
+  - port: 27017
+    protocol: TCP
+    targetPort: 27017
   selector:
     app: fruitsjs
-  type: LoadBalancer
+  type: ClusterIP

@@ -13,5 +13,11 @@ spec:
         app: fruitsjs
     spec:
       containers:
-      - image: nginx:latest
+      - image: fruitsjs:latest
         name: my-fruits-nginx
+        ports:
+        - containerPort: 3000
+      - image: mongodb
+        name: mongodb:latest
+        ports:
+        - containerPort: 27017
