@@ -13,11 +13,13 @@ spec:
         app: fruitsjs
     spec:
       containers:
-      - image: fruitsjs:latest
-        name: my-fruits-nginx
+      - name: my-fruits-nodejs
+        image: regevamit/fruitsjs:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 3000
-      - image: mongodb
-        name: mongodb:latest
+      - name: mongodb
+        image: mongo:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 27017
